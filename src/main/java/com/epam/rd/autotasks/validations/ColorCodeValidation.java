@@ -5,9 +5,7 @@ import java.util.regex.Pattern;
 
 public class ColorCodeValidation {
     public static boolean validateColorCode(String color) {
-
-        // Put your code here
-
+        return color != null && (color.matches("^#[\\da-fA-F]{6}") || color.matches("^#[\\da-fA-F]{3}"));
     }
 }
 
